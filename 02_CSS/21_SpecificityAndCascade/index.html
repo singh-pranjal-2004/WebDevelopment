@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity And Cascade</title>
+    <style>
+        .cmagenta{
+            color: magenta !important;
+        }
+        .cred{
+            color: red;
+        }
+        .cblue{
+            color: blue;
+        }
+        .cyellow{
+            color: yellow;
+        }
+
+        /* Attribute Selector */
+        [data-x=a]{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="cred cyellow cblue">Position And Order of Appreance</h1>
+        <h2 style="color: pink;" class="cred cyellow cblue" data-x="a">Specificity: Inline Selectors > ID Selectors > Class Selectors > Element Selectors > Universal Selectors</h2>
+        <h2>Origin</h2>
+        <h3 style="color: maroon;" class="cred cyellow cblue cmagenta">Importance</h3>
+    </div>
+</body>
+</html>
