@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 10px;
+        }
+
+        .box{
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: pink;
+            /* width: 1080px; */
+            margin: auto;
+            width: 80vw; /* View Port Width */
+            height: 10vh; /* View Port Height */
+        }
+
+        .container{
+            border: 2px solid black;
+            /* width: 1080px; */
+            box-sizing: border-box;
+            background-color: pink;
+            margin: 23px auto;
+            width: 80vw; /* View Port Width */
+            height: 80vh; /* View Port Height */
+            font-size: 16px;
+        }
+
+        .container p{
+            /* font-size: 2em; 2 times of the inheritated size of the font */
+            font-size: 2rem; /* 2 times of the inheritated size of the html */
+            width: 50%;
+        }
+
+        .anothercont{
+            background-color: goldenrod;
+            color: white;
+            font-size: 22px;
+            /* if you were on a phone that is 300px wide and 800px tall, vmin would represent the width of the viewport and vmax would represent the height of the device. */
+            width: 100vmax;
+            /* height: 100vmin; */
+            /* Min Height means whether content is there or not you should keep 80% of the minimum height  */
+            min-height: 80vh; 
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        This is a container. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquid facere velit eum suscipit aliquam obcaecati distinctio ipsam, molestias minima corrupti ab quisquam sed nobis inventore ex. Quasi ex sequi ea molestiae quo?
+        <br>
+        <br>
+        <p>
+            This is a paragraph inside div.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo necessitatibus veritatis officiis itaque dicta commodi quis. Explicabo nam velit expedita natus nisi iste sint, animi tempora officiis cumque accusantium exercitationem, odio provident?
+        </p>
+    </div>
+
+    <div class="anothercont">
+        This is another container. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, exercitationem! Recusandae non officia ducimus, sequi, corporis quae voluptates soluta voluptas quas maxime aspernatur minus porro sit reprehenderit a consequuntur ea itaque perferendis nemo.
+    </div>
+</body>
+</html>
