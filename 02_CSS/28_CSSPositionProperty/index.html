@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 20vh;
+            width: 60vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid goldenrod;
+        }
+
+        .box1 {
+            background-color: gold;
+            top: 0px;
+            /* Pretends like box1 is not there in the document and if top is written then it inherits with the nearest parent positioned ancestor */
+            /* position: absolute; */
+            
+            position: sticky;
+            height: 10vh;
+            width: 80vw;
+
+        }
+
+        .box2 {
+            background-color: gray;
+            position: relative;
+            top: 34px;
+            left: 54px;
+            z-index: 1;
+
+        }
+
+        .box3 {
+            background-color: goldenrod;
+            height: 10vh;
+            /* it will be fixed here if the page is scrolled then also */
+            position: fixed;
+            bottom: 0px;
+            left: 100px;
+        }
+
+        .box4 {
+            background-color: green;
+        }
+
+        .parent{
+            height: 200vh;
+            width: 80vw;
+            padding: 43px;
+            margin: 34px;
+            border: 3px solid purple;
+            position: absolute;
+
+            /* Exception: transform, filter or perspective properties can also make an element appeared as positioned */
+            /* transform: translate(0); */
+            /* filter: invert(); */
+            /* perspective: 0em; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+    
+
+</body>
+
+</html>
