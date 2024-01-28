@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* transform: rotate(45deg); */
+            /* 360 deg = 1 turn ; 90 deg = 0.25 turn  */
+            /* transform: rotate(0.25turn); */
+
+            /* transform: rotateX(30deg); */
+            /* transform: rotateY(30deg); */
+            /* transform: rotateZ(30deg); */
+
+            /* transform: scale(1.6); */
+            /* transform: scaleX(1.6); */
+            /* transform: scaleY(1.6); */
+            /* transform: scaleZ(1.6); */
+
+            /* Skew only valid in X and Y not in Z axis  */
+            /* transform: skew(5deg); */
+            /* transform: skewX(5deg); */
+            /* transform: skewY(5deg); */
+
+            /* transform: translate(100%); */
+            /* transform: translateX(100%); */
+            /* transform: translateY(100%); */
+
+            /* Applying multiple transforming properites in one line  */
+            transform: translateX(100%) translateY(-50%) skew(5deg);
+        }
+        
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
