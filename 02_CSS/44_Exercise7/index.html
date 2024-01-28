@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        ol{
+            list-style: none;
+            display: flex;
+            height: 10vh;
+            align-items: center;
+        }
+
+        .img1{
+            height: 8vh;
+            margin-right: 30vw;
+            margin-left: 8vw;
+        }
+
+        .item{
+            padding: 10px;
+            margin: 20px;
+        }
+
+
+        li{
+            padding: 10px;
+        }
+
+        .container{
+            width: 70vw;
+            height: 90vh;
+            margin-left: 15vw;
+            display: grid;
+            grid-template-areas: "box1 box2 box3"
+                                 "box4 box5 box6"
+                                 "box7 box8 box9"
+                                 "box10 box11 box12";
+        }
+
+        .box{
+            background-color: aliceblue;
+            width: auto;
+            height: auto;
+            margin: 2vh;
+        }
+
+        .box1{
+            grid-area: box1;
+        }
+        .box2{
+            grid-area: box2;
+        }
+        .box3{
+            grid-area: box3;
+        }
+        .box4{
+            grid-area: box4;
+        }
+        .box5{
+            grid-area: box5;
+        }
+        .box6{
+            grid-area: box6;
+        }
+        .box7{
+            grid-area: box7;
+        }
+        .box8{
+            grid-area: box8;
+        }
+        .box9{
+            grid-area: box9;
+        }
+        .box10{
+            grid-area: box10;
+        }
+
+        .box h3{
+            font-size: 20px;
+        }
+        .box p{
+            color: #222222;
+            margin-bottom: 33px;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+        }
+
+        .button1{
+            margin: 0px 5px;
+            margin-bottom: 15px;
+            height: 23px;
+            background-color: #00b6d1;
+            font: 12px;
+            border-radius: 5px;
+            padding: 6px 12px;
+            display: flex;
+            align-items: center;
+        }
+        .button2{
+            margin: 0px 5px;
+            margin-bottom: 15px;
+            height: 23px;
+            background-color: #5cb85c;
+            font: 12px;
+            border-radius: 5px;
+            padding: 6px 12px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .button a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .heading{
+            display: flex;
+            justify-content: center;
+        }
+
+        .para{
+            display: flex;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li><img class="img1" src="logo.png" alt="logo"></li>
+            <li class="item">Products</li>
+            <li class="item">Pricing</li>
+            <li class="item">Resources</li>
+            <li class="item">About us</li>
+            <li><img src="lang.png" alt="lang"></li>
+        </ol>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="box box1">
+                <div class="heading">
+                    <h3>English</h3>
+                </div>
+                <div class="para">
+                    <p>English</p>
+                </div>
+                <div class="button">
+                    <div class="button1"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe">Download 32-bit</a></strong></div>
+                    <div class="button2"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></strong></div>
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="heading">
+                    <h3>Deutsch</h3>
+                </div>
+                <div class="para">
+                    <p>German</p>
+                </div>
+                <div class="button">
+                    <div class="button1"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe">Download 32-bit</a></strong></div>
+                    <div class="button2"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></strong></div>
+                </div>
+            </div>
+            <div class="box box3">
+                <div class="heading">
+                    <h3>Italiano</h3>
+                </div>
+                <div class="para">
+                    <p>Italian</p>
+                </div>
+                <div class="button">
+                    <div class="button1"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe">Download 32-bit</a></strong></div>
+                    <div class="button2"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></strong></div>
+                </div>
+            </div>
+            <div class="box box4">
+                <div class="heading">
+                    <h3>Español</h3>
+                </div>
+                <div class="para">
+                    <p>Spanish</p>
+                </div>
+                <div class="button">
+                    <div class="button1"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe">Download 32-bit</a></strong></div>
+                    <div class="button2"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></strong></div>
+                </div>
+            </div>
+            <div class="box box5">
+                <div class="heading">
+                    <h3>français</h3>
+                </div>
+                <div class="para">
+                    <p>French</p>
+                </div>
+                <div class="button">
+                    <div class="button1"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe">Download 32-bit</a></strong></div>
+                    <div class="button2"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></strong></div>
+                </div>
+            </div>
+            <div class="box box6">
+                <div class="heading">
+                    <h3>Português brasileiro</h3>
+                </div>
+                <div class="para">
+                    <p>Brazilian Portuguese</p>
+                </div>
+                <div class="button">
+                    <div class="button1"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe">Download 32-bit</a></strong></div>
+                    <div class="button2"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></strong></div>
+                </div>
+            </div>
+            <div class="box box7">
+                <div class="heading">
+                    <h3>日本</h3>
+                </div>
+                <div class="para">
+                    <p>Japanese</p>
+                </div>
+                <div class="button">
+                    <div class="button1"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe">Download 32-bit</a></strong></div>
+                    <div class="button2"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></strong></div>
+                </div>
+            </div>
+            <div class="box box8">
+                <div class="heading">
+                    <h3>한국어</h3>
+                </div>
+                <div class="para">
+                    <p>Korean</p>
+                </div>
+                <div class="button">
+                    <div class="button1"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe">Download 32-bit</a></strong></div>
+                    <div class="button2"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></strong></div>
+                </div>
+            </div>
+            <div class="box box9">
+                <div class="heading">
+                    <h3>中国</h3>
+                </div>
+                <div class="para">
+                    <p>Chinese</p>
+                </div>
+                <div class="button">
+                    <div class="button1"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe">Download 32-bit</a></strong></div>
+                    <div class="button2"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></strong></div>
+                </div>
+            </div>
+            <div class="box box10">
+                <div class="heading">
+                    <h3>中國</h3>
+                </div>
+                <div class="para">
+                    <p>Traditional Chinese</p>
+                </div>
+                <div class="button">
+                    <div class="button1"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe">Download 32-bit</a></strong></div>
+                    <div class="button2"><strong><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></strong></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
