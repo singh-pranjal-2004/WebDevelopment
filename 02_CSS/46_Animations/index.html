@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+            background-color: pink;
+            width: 30vw;
+            height: 80vh;
+        }
+
+        .box{
+            width: 34px;
+            height: 45px;
+            /* background-color: goldenrod; */
+
+            /* animation: PranjalsAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(1, 1, 1, 1);
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+            animation-play-state: paused; */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: PranjalsAnimation 3s cubic-bezier(1, 1, 1, 1) infinite,
+                       Pranjal2 3s cubic-bezier(1,1,1,1) infinite;
+        }
+
+        @keyframes PranjalsAnimation {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(90vw);
+            }
+        }
+
+        @keyframes Pranjal2{
+            0%{
+                transform: rotate(90deg);
+            }
+            25%{
+                transform: rotate(180deg);
+            }
+            50%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
