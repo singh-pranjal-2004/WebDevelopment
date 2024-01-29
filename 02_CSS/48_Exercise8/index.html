@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Animation</title>
+    <style>
+        .container{
+            background-color: blue;
+            width: 600px;
+            height: 600px;
+            position: relative
+        }
+
+        .ball{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 70px;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            animation: Y 2.5s cubic-bezier(1,1,1,1) infinite alternate-reverse, X 2.5s cubic-bezier(1,1,1,1) infinite alternate-reverse;
+        }
+
+        @keyframes X {
+            from{
+
+            }
+            to{
+                transform: translateX(500px);
+            }
+        }
+
+        @keyframes Y{
+            0%{
+                transform: translateY(0px);
+            }
+            25%{
+                transform: translateY(-100px);
+            }
+            50%{
+                transform: translateY(0px);
+            }
+            75%{
+                transform: translateY(-400px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>
